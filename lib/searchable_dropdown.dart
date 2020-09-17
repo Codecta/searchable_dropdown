@@ -631,7 +631,7 @@ class _SearchableDropdownState<T> extends State<SearchableDropdown<T>> {
         Stack(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(10.0),
+              padding: EdgeInsets.all(0.0),
               child: result,
             ),
             widget.underline is NotGiven
@@ -786,8 +786,8 @@ class _DropdownDialogState<T> extends State<DropdownDialog> {
       child: new Card(
         color: widget.menuBackgroundColor,
         margin: EdgeInsets.symmetric(
-            vertical: widget.dialogBox ? 10 : 5,
-            horizontal: widget.dialogBox ? 10 : 4),
+            vertical: widget.dialogBox ? 0 : 5,
+            horizontal: widget.dialogBox ? 0 : 4),
         child: new Container(
           constraints: widget.menuConstraints,
           padding: EdgeInsets.symmetric(vertical: 15, horizontal: 15),
